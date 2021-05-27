@@ -1,0 +1,31 @@
+{
+  "name": "free-gc",
+  "version": "1.0.1",
+  "license": "MIT",
+  "author": "bluelovers",
+  "main": "dist/index.js",
+  "module": "dist/free-gc.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "prepublishOnly": "tsdx test && tsdx build",
+    "start": "tsdx watch",
+    "lint": "tsdx lint",
+    "test": "tsdx test",
+    "build": "tsdx build",
+    "prepare": "tsdx build"
+  },
+  "devDependencies": {
+    "@bluelovers/tsconfig": "^1.0.20",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.1",
+    "tslib": "^2.2.0"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=10"
+  }
+}
