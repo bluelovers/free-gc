@@ -1,6 +1,6 @@
 {
   "name": "free-gc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "``` --max-old-space-size=2048 ```",
   "homepage": "https://github.com/bluelovers/free-gc#readme",
   "bugs": {

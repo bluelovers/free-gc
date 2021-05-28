@@ -1,9 +1,11 @@
+export function gcEnabled()
+{
+  return (typeof global !== 'undefined' && typeof global.gc === 'function')
+}
+
 export function freeGC()
 {
-  if (typeof global !== 'undefined' && typeof global.gc === 'function')
-  {
-    global.gc();
-  }
+  return gcEnabled() && global.gc()
 }
 
 export default freeGC
